@@ -32,7 +32,7 @@ jobs:
         
         with:
           images: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/ghost-folio-sync
+            ${{ secrets.DOCKERHUB_USERNAME }}/ghostfolio-sync
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=pep440,pattern={{version}}
